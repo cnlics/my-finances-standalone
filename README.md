@@ -8,4 +8,6 @@ my-finances-standalone
  2.运行: `java -jar my-finances-standalone-1.0.1.RELEASE.war`
  
 **效果截图:**
+
 ![my-finances-standalone](./doc/a.gif)
+![my-finances-standalone](./doc/b.gif)
