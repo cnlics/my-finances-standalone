@@ -12,3 +12,13 @@
         <pattern>/*</pattern>
     </decorator>
 </decorators>
+
+<!--<sitemesh>-->
+    <!--<mapping decorator="/WEB-INF/decorators/main.jsp"/>-->
+
+    <!--<mapping path="/*" decorator="/WEB-INF/decorators/main.jsp"/>-->
+
+    <!--<mapping path="/resources/*" exclue="true"/>-->
+    <!--<mapping path="/test*" exclue="true"/>-->
+
+<!--</sitemesh>-->
