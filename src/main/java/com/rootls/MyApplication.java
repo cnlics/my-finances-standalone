@@ -10,6 +10,7 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.filter.CharacterEncodingFilter;
 
 import javax.servlet.ServletContextListener;
@@ -22,6 +23,7 @@ import java.util.List;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan(basePackages = "com.rootls")
+@PropertySource(value={"classpath:application.properties","classpath:config/config.properties"})
 public class MyApplication  extends SpringBootServletInitializer {
 
     @Override
@@ -38,10 +40,11 @@ public class MyApplication  extends SpringBootServletInitializer {
         SpringApplication.run(MyApplication.class, args);
     }
 
-    @Bean
-    protected ServletContextListener config(){
-        return new Config();
-    }
+    //在监听器类上加上@Component注解，就不需要这样手动注入了
+//    @Bean
+//    protected ServletContextListener config(){
+//        return new Config();
+//    }
 
     @Bean
     public FilterRegistrationBean characterEncodingFilter() {
