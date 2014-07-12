@@ -10,3 +10,37 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# intellij idea
+.idea/
+target/
+*.iml
+
+#eclipse
+*.pydevproject
+.project
+.metadata
+.classpath
+classes/**
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.eml
+*.userlibraries
+local.properties
+.classpath
+.settings/
+.loadpath
+
+out/
+logs/
+*.log
+*~
+Thumbs.db
+
+
+
