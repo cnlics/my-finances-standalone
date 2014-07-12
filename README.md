@@ -12,12 +12,13 @@ my-finances-standalone
 
  - 修改`my-finances-standalone.war/WEB-INF/classes/application.properties`文件
     - 把`spring.datasource.initialize=false` 改为 `spring.datasource.initialize=true`启动时创建数据表并导入数据,再次运行改为false就不会作初始化数据表操作。
-    - 修改数据源 ```
+    - 修改数据源
+    ```
     spring.datasource.driverClassName=com.mysql.jdbc.Driver
     spring.datasource.url=jdbc:mysql://localhost:3306/db_finance
     spring.datasource.username=root
     spring.datasource.password=123
-  ```
+    ```
  
 **效果截图:**
 
