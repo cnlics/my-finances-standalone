@@ -22,11 +22,11 @@
 <div class=" container ">
     <form:form name="searchForm" modelAttribute="daytip" role="form-horizontal" action="${ctx}/finance/list" method="post">
         <input type="hidden" name="pageNumber" value="${pageNumber}">
-        <input type="hidden" name="pageSize" value="${pageSize}">
+        <%--<input type="hidden" name="pageSize" value="${pageSize}">--%>
         <input type="hidden" name="order" value="${order}">
         <div class="from-group " style="margin-bottom: 10px">
             <div class="row">
-                <div class="col-md-9 ">
+                <div class="col-md-10 ">
                     <div class="input-group">
                         <span class="input-group-addon">描述:</span>
                         <form:input type="text" path="desc" class="form-control" cssStyle="max-width: 120px"/>
@@ -36,7 +36,9 @@
                         <form:input type="text" path="endDate" class="form-control" cssStyle="max-width: 100px"/>
                         <span class="input-group-addon">类型:</span>
                         <form:input type="text" path="type" class="form-control" cssStyle="max-width: 60px"/>
-                        <span class="input-group-addon"></span>
+                        <span class="input-group-addon">每页</span>
+                        <input type="text" name="pageSize" value="${pageSize}" class="form-control" style="max-width: 50px"/>
+                        <span class="input-group-addon">条</span>
                         <select id="tableName" name="tableName" class="form-control"  cssStyle="max-width: 60px">
                             <option value="daytip" <c:if test="${tableName ne 'daytipDetail'}">selected </c:if> >简要数据</option>
                             <option value="daytipDetail" <c:if test="${tableName eq 'daytipDetail'}">selected </c:if>>明细数据</option>
