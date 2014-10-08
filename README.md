@@ -29,3 +29,8 @@ start /B java -jar ./my-finances-standalone.war
 
 ![my-finances-standalone](./doc/a.gif)
 ![my-finances-standalone](./doc/b.gif)
+
+
+**视频讲解**
+
+[my-finances-standalone示例讲解](http://www.tudou.com/programs/view/UBxBLP-78vA)
