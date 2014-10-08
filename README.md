@@ -12,12 +12,13 @@ my-finances-standalone
 
  - 修改`my-finances-standalone.war/WEB-INF/classes/application.properties`文件
     - 把`spring.datasource.initialize=false` 改为 `spring.datasource.initialize=true`
-    - 修改数据源 ```
+    - 修改数据源 
+    ```
     spring.datasource.driverClassName=com.mysql.jdbc.Driver
     spring.datasource.url=jdbc:mysql://localhost:3306/db_finance
     spring.datasource.username=root
     spring.datasource.password=123
-  ```
+    ```
 
 4.如果想要发布成windows服务，或者不通过命令行执行程序,可以my-finances-standalone.war所在目录下新建一个my-finances-standalone.bat的批处理文件，并添加以下内容:
 ```
